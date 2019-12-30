@@ -1,0 +1,1 @@
+export { default as TreatmentSection } from './TreatmentsSection.component';
