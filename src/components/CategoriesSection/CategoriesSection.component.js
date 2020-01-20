@@ -17,11 +17,11 @@ export default function CategoriesSection(props) {
                 <SectionTitle
                   centered={false}
                   caption="Categorias"
-                  title="Áreas da urologia"
+                  title="Áreas da Urologia"
                 />
               </Hidden>
               <Hidden lg xl md sm>
-                <SectionTitle caption="Categorias" title="Áreas das urologia" />
+                <SectionTitle caption="Categorias" title="Áreas das Urologia" />
               </Hidden>
             </Col>
             <Col lg={9} xs={12} sm={12} md={12}>

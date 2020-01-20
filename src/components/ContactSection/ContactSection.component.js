@@ -50,9 +50,9 @@ function ContactSection(props) {
             </div>
             <ContactCell
               title="E-mail"
-              description={`PLACE_MAIL_HERE`}
+              description={`dayclin2016@gmail.com`}
               icon="envelope"
-              onClick={() => window.open("mailto:PLACE_MAIL_HERE")}
+              onClick={() => window.open("mailto:dayclin2016@gmail.com")}
             />
           </MapWindow>
         </Map>

@@ -18,7 +18,7 @@ export default function TreatmentsSection(props) {
               />
             </Hidden>
             <Hidden lg xl md sm>
-              <SectionTitle caption="Categorias" title="Áreas das urologia" />
+              <SectionTitle caption="Categorias" title="Áreas das Úrologia" />
             </Hidden>
           </Col>
           <Col lg={9} xs={12} sm={12} md={12}>
