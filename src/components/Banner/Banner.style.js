@@ -13,7 +13,7 @@ export const ImageContainer = styled.div`
 `
 
 export const BannerContent = styled(Flex)`
-  max-width: 350px;
+  max-width: 450px;
   flex-direction: column;
   padding: 2.5rem 0;
 `

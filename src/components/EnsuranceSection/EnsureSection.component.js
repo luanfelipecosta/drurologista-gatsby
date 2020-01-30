@@ -8,10 +8,10 @@ import c2 from "../../assets/convenio-2.png"
 import c3 from "../../assets/convenio-3.png"
 import c4 from "../../assets/convenio-4.png"
 
-const EnsuranceLogo = ({ source }) => (
+const EnsuranceLogo = ({ source, width }) => (
   <Col xs={6} sm={6} md={3} lg={3}>
     <Flex itemsCenter justifyCenter>
-      <img src={source} />
+      <img style={{ width: width ? `${width}px` : 'auto'}} src={source} />
     </Flex>
   </Col>
 )
@@ -25,10 +25,10 @@ export default function EnsuranceSection(props) {
             <SectionTitle caption="Cobertura" title="Convênios que atendemos" />
           </Row>
           <Row alignItems="center">
+            <EnsuranceLogo width={170} source={c4} />
             <EnsuranceLogo source={c1} />
             <EnsuranceLogo source={c2} />
             <EnsuranceLogo source={c3} />
-            <EnsuranceLogo source={c4} />
           </Row>
         </Container>
       </Background>

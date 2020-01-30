@@ -9,11 +9,11 @@ import Flex from "react-styled-flexbox"
 
 export const WhatsappButton = () => {
   return (
-    <ButtonWrapper onClick={() => window.open("https://wa.me/5512996390908", "_blank")}>
+    <ButtonWrapper href="tel:+551239234146">
       <WhatsappIcon className="fa fa-brands-whatsapp" />
       <Flex directionColumn>
         <ButtonTitle>Agende sua consulta</ButtonTitle>
-        <ButtonDescription>+55 (12) 99639-0908</ButtonDescription>
+        <ButtonDescription>+55 (12) 3923-4146</ButtonDescription>
       </Flex>
     </ButtonWrapper>
   )

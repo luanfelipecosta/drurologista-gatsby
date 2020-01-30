@@ -26,11 +26,12 @@ export const StyledLink = styled(Link).attrs({
 
 export const Item = styled.span({})
 
-export const ButtonWrapper = styled.div`
+export const ButtonWrapper = styled.a`
   background-color: ${Colors.DarkBlue};
   display: flex;
   flex: 1;
   align-items: center;
+  text-decoration: none;
   /* justify-content: center; */
   padding: 1rem 2rem;
   cursor: pointer;

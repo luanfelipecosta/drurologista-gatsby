@@ -31,7 +31,7 @@ export default function Banner() {
                 )
               }
             >
-              AGENDAR UMA CONSULTA POR WHATSAPP
+              AGENDE UMA CONSULTA DE EMERGÊNCIA POR WHATSAPP
             </Button>
           </BannerContent>
         </StyledRow>

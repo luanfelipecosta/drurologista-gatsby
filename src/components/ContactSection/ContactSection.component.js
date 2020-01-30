@@ -44,7 +44,7 @@ function ContactSection(props) {
               <ContactCell
                 key="endereco"
                 title="Horário de funcionamento"
-                description={`Seg. - Sex: 09:00 - 18:00 \n Sab: 09:00 - 13:00`}
+                description={`Seg. - Sex: 09:00 - 18:00`}
                 icon="clock"
               />
             </div>
