@@ -25,7 +25,7 @@ export default function TreatmentsTileComponent({ treatment = "Rim" }) {
           .toLowerCase()}`}
       >
         <TreatmentTile>
-          <img src={imgObj[treatment]} />
+          <img alt='threatment icon' src={imgObj[treatment]} />
           <span>{treatment}</span>
         </TreatmentTile>
       </Link>

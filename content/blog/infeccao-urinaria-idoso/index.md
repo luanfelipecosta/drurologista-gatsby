@@ -1,5 +1,5 @@
 ---
-title: Infecção urinária no idoso
+title: Infecção urinária no idosos
 date: "2019-03-15T22:12:03.284Z"
 description: "De acordo com o Projeto Diretrizes, da Sociedade Brasileira de Urologia, estima-se que a infecção
 urinária em idosos atinja 20% das mulheres e 10% dos homens."

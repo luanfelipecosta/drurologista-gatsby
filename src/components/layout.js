@@ -1,8 +1,8 @@
 import React from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import { Header as HeaderLogo, Menu, Footer } from "../components"
-import { Container, Row, Col } from "react-awesome-styled-grid"
-import { rhythm, scale } from "../utils/typography"
+// import { Container, Row, Col } from "react-awesome-styled-grid"
+// import { rhythm, scale } from "../utils/typography"
 import styled, { createGlobalStyle, ThemeProvider } from "styled-components"
 import Flex from "react-styled-flexbox"
 import { Colors } from "../config"
@@ -34,9 +34,8 @@ const GlobalStyle = createGlobalStyle`
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
+    const { children } = this.props
+    // const rootPath = `${__PATH_PREFIX__}/`
 
     return (
       <ThemeProvider theme={Colors}>
@@ -50,60 +49,60 @@ class Layout extends React.Component {
       </ThemeProvider>
     )
 
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
-    }
-    return (
-      <Container>
-        <Row>
-          <Col xs={12} md={2} lg={4}>
-            Col A
-          </Col>
-          <Col xs={12} md={10} lg={4}>
-            Col B
-          </Col>
-        </Row>
-        {children}
-      </Container>
+    // if (location.pathname === rootPath) {
+    //   header = (
+    //     <h1
+    //       style={{
+    //         ...scale(1.5),
+    //         marginBottom: rhythm(1.5),
+    //         marginTop: 0,
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`,
+    //         }}
+    //         to={`/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h1>
+    //   )
+    // } else {
+    //   header = (
+    //     <h3
+    //       style={{
+    //         fontFamily: `Montserrat, sans-serif`,
+    //         marginTop: 0,
+    //       }}
+    //     >
+    //       <Link
+    //         style={{
+    //           boxShadow: `none`,
+    //           textDecoration: `none`,
+    //           color: `inherit`,
+    //         }}
+    //         to={`/`}
+    //       >
+    //         {title}
+    //       </Link>
+    //     </h3>
+    //   )
+    // }
+    // return (
+    //   <Container>
+    //     <Row>
+    //       <Col xs={12} md={2} lg={4}>
+    //         Col A
+    //       </Col>
+    //       <Col xs={12} md={10} lg={4}>
+    //         Col B
+    //       </Col>
+    //     </Row>
+    //     {children}
+    //   </Container>
       // <div
       //   style={{
       //     marginLeft: `auto`,
@@ -120,7 +119,7 @@ class Layout extends React.Component {
       //     <a href="https://www.gatsbyjs.org">Gatsby</a>
       //   </footer>
       // </div>
-    )
+    // )
   }
 }
 

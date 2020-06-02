@@ -10,15 +10,22 @@ export default function Button({
   backgroundColor,
   expanded,
 }) {
-  return (
-    <Link style={{ textDecoration: "none" }} to={linkTo} onClick={onClick}>
-      <ButtonBody
-        margin={margin}
-        expanded={expanded}
-        backgroundColor={backgroundColor}
-      >
-        <ButtonLabel>{children}</ButtonLabel>
-      </ButtonBody>
-    </Link>
+  const renderButton = () => (
+    <ButtonBody
+      margin={margin}
+      expanded={expanded}
+      backgroundColor={backgroundColor}
+    >
+      <ButtonLabel>{children}</ButtonLabel>
+    </ButtonBody>
   )
+
+  if (linkTo) {
+    return (
+      <Link style={{ textDecoration: "none" }} to={linkTo} onClick={onClick}>
+        {renderButton()}
+      </Link>
+    )
+  }
+  return renderButton()
 }

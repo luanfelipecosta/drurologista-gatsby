@@ -1,13 +1,13 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "@components/layout"
-import Img from "gatsby-image"
 import { PostCard } from "@components/PostCard"
 import { Container } from "react-awesome-styled-grid"
 import { Row } from "react-flexa"
 
-const Tags = ({ pageContext, data }) => {
+const Tags = props => {
+  const { pageContext, data } = props
   const { tag } = pageContext
   const { edges, totalCount } = data.allMarkdownRemark
   const tagHeader = `${totalCount} post${
@@ -16,13 +16,13 @@ const Tags = ({ pageContext, data }) => {
 
   return (
     <Layout>
-      <Container style={{ padding: '4rem 0'}}>
+      <Container style={{ padding: "4rem 0" }}>
         <Row >
           {edges.map(({ node }) => {
             const { slug } = node.fields
             const { excerpt } = node
             const { title, image, date } = node.frontmatter
-            const featuredImgFluid = image ? image.childImageSharp.fixed : null
+            const featuredImgFluid = image ? image.childImageSharp.fixed : null;
 
             return (
               <PostCard
@@ -87,7 +87,7 @@ export const pageQuery = graphql`
             date
             image {
               childImageSharp {
-                fixed (width: 420, height: 300) {
+                fixed(width: 420, height: 300) {
                   ...GatsbyImageSharpFixed
                 }
               }

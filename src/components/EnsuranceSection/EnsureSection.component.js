@@ -11,7 +11,7 @@ import c4 from "../../assets/convenio-4.png"
 const EnsuranceLogo = ({ source, width }) => (
   <Col xs={6} sm={6} md={3} lg={3}>
     <Flex itemsCenter justifyCenter>
-      <img style={{ width: width ? `${width}px` : 'auto'}} src={source} />
+      <img alt="logo-ensurance" style={{ width: width ? `${width}px` : 'auto'}} src={source} />
     </Flex>
   </Col>
 )

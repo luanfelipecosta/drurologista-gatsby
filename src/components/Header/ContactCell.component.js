@@ -17,7 +17,7 @@ export const ContactCell = props => {
     light = false,
     style = {},
     onClick = null,
-    to = null,
+    to = '/',
   } = props
 
   return (
@@ -25,7 +25,7 @@ export const ContactCell = props => {
       <Link to={to} onClick={onClick} style={{ textDecoration: "none" }}>
         <Flex>
           {icon === "facebook" && (
-            <img src={FB_SVG} style={{ marginRight: 16 }} />
+            <img alt="facebook svg" src={FB_SVG} style={{ marginRight: 16 }} />
           )}
           {icon && icon !== "facebook" && (
             <Icon light={light} className={`fa fa-${icon}`} />

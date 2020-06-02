@@ -7,7 +7,9 @@ import { Button } from "@components"
 import Img from "gatsby-image"
 
 export default function PostCard(props) {
-  const { fluid, fixed, title, date, excerpt, slug } = props
+  const { fixed, title, date, excerpt, slug } = props
+
+  console.log({ title, fixed })
 
   return (
     <Col>
@@ -17,7 +19,6 @@ export default function PostCard(props) {
             imgStyle={{ objectFit: "contain" }}
             className="img"
             {...{
-              fluid,
               fixed,
             }}
           />

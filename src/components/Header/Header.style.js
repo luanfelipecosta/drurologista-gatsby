@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import { Container as RawContainer } from "react-awesome-styled-grid"
 import LOGO from "../../assets/logo.png"
 import { Row, Col } from "react-awesome-styled-grid"
 import { rhythm } from "../../utils/typography"

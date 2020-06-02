@@ -1,7 +1,5 @@
 import React from "react"
-import { Background } from "../CategoriesSection/CategoriesComponent.style"
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react"
-import { Container } from "react-awesome-styled-grid"
 import { Row, SectionTitle } from "@components"
 import { MapWindow } from "./ContactSection.style"
 import { ContactCell } from "../Header/ContactCell.component"

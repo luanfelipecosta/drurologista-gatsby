@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Row, Col, Flex } from "../../components"
+import { Container, Row, Flex } from "../../components"
 import {
   StyledFooter,
   RightsStripe,
@@ -15,14 +15,14 @@ export default function Footer() {
         <Container>
           <Row>
             <FooterCol>
-              <img src={LIGHT_LOGO} />
+              <img alt="logo-light-dr-urologista" src={LIGHT_LOGO} />
             </FooterCol>
             <FooterCol>
               <Flex directionColumn>
                 <h2>Menu</h2>
-                <a href="#">Home</a>
-                <a href="#">Home</a>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
+                <a href="/">Home</a>
+                <a href="/">Home</a>
               </Flex>
             </FooterCol>
             <FooterCol>
@@ -59,7 +59,9 @@ export default function Footer() {
             <FooterCol>
               <Flex directionColumn>
                 <h2>Redes Sociais</h2>
-                <a href="#">Facebook</a>
+                <a targt="_blank" href="https://www.facebook.com/drurologista">
+                  Facebook
+                </a>
               </Flex>
             </FooterCol>
           </Row>

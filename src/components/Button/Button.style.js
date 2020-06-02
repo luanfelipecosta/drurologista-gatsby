@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { scale, rhythm } from "../../utils/typography"
+import { rhythm } from "../../utils/typography"
 
 export const ButtonBody = styled.div`
   cursor: pointer;

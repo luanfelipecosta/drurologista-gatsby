@@ -5,7 +5,7 @@ import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 // import { rhythm, scale } from "../../utils/typography"
 import { PostContainer, PostCard, BlogNav } from "./BlogPost.style"
-import { Container, Row, Col } from "react-awesome-styled-grid"
+import { Container } from "react-awesome-styled-grid"
 
 class BlogPostTemplate extends React.Component {
   render() {

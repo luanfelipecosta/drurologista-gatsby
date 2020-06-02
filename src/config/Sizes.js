@@ -1,4 +1,4 @@
-import { scale, rhythm } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 export const Sizes = {
   Font: {

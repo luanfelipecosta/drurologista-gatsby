@@ -1,7 +1,6 @@
 import styled from "styled-components"
 import BG from "../../assets/banner.png"
 import Flex from "react-styled-flexbox"
-import { Button } from "@components"
 
 export const ImageContainer = styled.div`
   width: 100%;
@@ -30,6 +29,4 @@ export const StyledRow = styled.div`
     justify-content: center;
     padding-left: 0;
   }
-
-  
-`;
+`
