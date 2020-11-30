@@ -37,8 +37,7 @@ const Tags = props => {
           })}
         </Row>
       </Container>
-      <h1>{tagHeader}</h1>
-      <ul></ul>
+
     </Layout>
   )
 }
